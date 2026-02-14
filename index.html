@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Schwarzwälder Hof – modernes Restaurant im Schwarzwald mit regionaler Küche, Speisekarte, Allergiehinweisen, Öffnungszeiten und Kontakt."
+      content="Schwarzwälder Hof – traditionelles Restaurant im Schwarzwald mit Speisekarte, Öffnungszeiten und Kontakt."
     />
     <title>Schwarzwälder Hof | Restaurant im Schwarzwald</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -20,7 +20,6 @@
     <header class="topbar glass reveal">
       <a class="brand" href="#home" aria-label="Zur Startseite">
         <img src="assets/logo.svg" alt="Schwarzwälder Hof Logo" />
-        <span>Schwarzwälder Hof</span>
       </a>
       <button id="menuToggle" class="menu-toggle" aria-label="Menü öffnen">☰</button>
       <nav id="siteNav" class="site-nav">
@@ -35,16 +34,16 @@
       <section class="hero">
         <div class="hero-overlay"></div>
         <div class="hero-content reveal">
-          <p class="eyebrow">Regionale Küche. Moderner Stil. Echter Schwarzwald.</p>
-          <h1>Genuss, der bleibt – herzlich serviert im Schwarzwälder Hof.</h1>
+          <p class="eyebrow">Seit 1984 in Familienhand</p>
+          <h1>Schwarzwälder Gastlichkeit mit warmem, traditionellem Charakter.</h1>
           <p>
-            Unser Haus verbindet traditionelle Schwarzwald-Rezepte mit zeitgemäßer
-            Küche. Perfekt für einen spontanen Besuch, ein entspanntes Abendessen
-            oder ein Wiedersehen mit Familie und Freunden.
+            Der Schwarzwälder Hof steht für ehrliche Küche, regionale Zutaten und
+            gemütliche Stuben-Atmosphäre – wie man sie von kleinen Höfen in der
+            Region kennt.
           </p>
           <div class="hero-cta">
             <a class="btn secondary" href="#menu">Speisekarte ansehen</a>
-            <a class="btn ghost" href="#contact">Jetzt reservieren</a>
+            <a class="btn ghost" href="#contact">Reservieren</a>
           </div>
         </div>
       </section>
@@ -53,23 +52,22 @@
         <div class="section-head">
           <h2>Unser Restaurant</h2>
           <p>
-            Klar strukturiert, freundlich und einfach zu verstehen: genau so soll
-            unser Online-Auftritt sein – damit jeder schnell alle wichtigen
-            Informationen findet.
+            Ein Ort für Einheimische, Wandernde und Familien: unkompliziert,
+            herzlich und authentisch Schwarzwald.
           </p>
         </div>
         <div class="features">
           <article class="card glass">
-            <h3>Regional & saisonal</h3>
-            <p>Frische Zutaten von Höfen und Produzent:innen aus der Umgebung.</p>
+            <h3>Regionale Küche</h3>
+            <p>Klassiker aus Baden mit saisonalen Produkten aus der Umgebung.</p>
           </article>
           <article class="card glass">
-            <h3>Transparente Allergieinfos</h3>
-            <p>Alle Hinweise sind direkt sichtbar und zusätzlich filterbar.</p>
+            <h3>Allergie-Transparenz</h3>
+            <p>Alle Hinweise sind direkt bei den Gerichten sichtbar und filterbar.</p>
           </article>
           <article class="card glass">
-            <h3>Für Einheimische & Gäste</h3>
-            <p>Ein Ort zum Wiederkommen – mit modernem Ambiente und warmer Atmosphäre.</p>
+            <h3>Wohlfühl-Atmosphäre</h3>
+            <p>Warme Farben, Holzoptik und ruhiges Ambiente zum länger Bleiben.</p>
           </article>
         </div>
       </section>
@@ -77,7 +75,7 @@
       <section id="menu" class="section reveal">
         <div class="section-head">
           <h2>Speisekarte</h2>
-          <p>Mit Fotos und Allergie-Filtern für eine schnelle Auswahl.</p>
+          <p>Traditionelle Gerichte mit modernen Allergie-Filtern.</p>
         </div>
         <div class="allergy-filters" id="allergyFilters"></div>
         <div id="menuGrid" class="menu-grid"></div>
@@ -95,7 +93,7 @@
       <section id="hours" class="section reveal">
         <div class="section-head">
           <h2>Öffnungszeiten</h2>
-          <p>Warme Küche bis 21:30 Uhr · Reservierung wird empfohlen.</p>
+          <p>Warme Küche bis 21:30 Uhr · Reservierung empfohlen.</p>
         </div>
         <div class="hours-layout">
           <div class="card glass">
@@ -111,10 +109,9 @@
               </tbody>
             </table>
           </div>
-          <div class="card glass highlight">
+          <div class="card glass highlight compact-status">
             <h3>Heute geöffnet?</h3>
             <p id="todayState">Wird geladen ...</p>
-            <small>Standort: Titisee-Neustadt · Schwarzwald</small>
           </div>
         </div>
       </section>
@@ -122,21 +119,29 @@
       <section id="contact" class="section reveal">
         <div class="section-head">
           <h2>Kontakt & Anfahrt</h2>
-          <p>
-            Direkt im Herzen des Schwarzwalds. Unten sehen Sie die Karte für die
-            schnelle Orientierung.
-          </p>
+          <p>Kompakt, klar und direkt mit Karte.</p>
         </div>
         <div class="contact-layout">
           <div class="card glass contact-details">
-            <p><strong>Adresse:</strong><br />Waldstraße 12, 79822 Titisee-Neustadt</p>
-            <p><strong>Telefon:</strong> <a href="tel:+497651123456">+49 7651 123456</a></p>
-            <p>
-              <strong>E-Mail:</strong>
-              <a href="mailto:reservierung@schwarzwaelder-hof.de"
-                >reservierung@schwarzwaelder-hof.de</a
-              >
-            </p>
+            <div class="address-block">
+              <p><strong>Adresse:</strong></p>
+              <p>Waldstraße 12, 79822 Titisee-Neustadt</p>
+            </div>
+            <iframe
+              title="Karte Schwarzwälder Hof"
+              src="https://www.openstreetmap.org/export/embed.html?bbox=8.1346%2C47.9078%2C8.1638%2C47.9278&layer=mapnik&marker=47.9178%2C8.1492"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+            <div class="contact-meta">
+              <p><strong>Telefon:</strong> <a href="tel:+497651123456">+49 7651 123456</a></p>
+              <p>
+                <strong>E-Mail:</strong>
+                <a href="mailto:reservierung@schwarzwaelder-hof.de"
+                  >reservierung@schwarzwaelder-hof.de</a
+                >
+              </p>
+            </div>
             <a
               class="btn secondary"
               href="https://maps.google.com/?q=Waldstra%C3%9Fe+12,+79822+Titisee-Neustadt"
@@ -144,12 +149,6 @@
               rel="noopener"
               >Route in Google Maps</a
             >
-            <iframe
-              title="Karte Schwarzwälder Hof"
-              src="https://www.openstreetmap.org/export/embed.html?bbox=8.1346%2C47.9078%2C8.1638%2C47.9278&layer=mapnik&marker=47.9178%2C8.1492"
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
           </div>
           <form class="card glass contact-form" onsubmit="event.preventDefault()">
             <h3>Reservierungsanfrage</h3>
@@ -158,7 +157,7 @@
             <label>Datum <input type="date" required /></label>
             <label>Personen <input type="number" min="1" max="14" value="2" /></label>
             <label>Nachricht <textarea rows="4"></textarea></label>
-            <button type="submit" class="btn ghost">Anfrage senden</button>
+            <button type="submit" class="btn form-btn">Anfrage senden</button>
             <small>Demo-Formular: Kann in XAMPP später mit PHP-Backend verbunden werden.</small>
           </form>
         </div>
@@ -166,26 +165,12 @@
     </main>
 
     <footer class="footer">
-      <p>© <span id="year"></span> Schwarzwälder Hof · Mit Liebe im Schwarzwald</p>
+      <p>© <span id="year"></span> Schwarzwälder Hof</p>
       <div class="legal-links">
-        <a href="#impressum">Impressum</a>
-        <a href="#datenschutz">Datenschutz</a>
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
       </div>
     </footer>
-
-    <section id="impressum" class="legal-section section reveal">
-      <h2>Impressum</h2>
-      <p>Schwarzwälder Hof, Waldstraße 12, 79822 Titisee-Neustadt.</p>
-      <p>Kontakt: +49 7651 123456 · reservierung@schwarzwaelder-hof.de</p>
-    </section>
-
-    <section id="datenschutz" class="legal-section section reveal">
-      <h2>Datenschutz</h2>
-      <p>
-        Diese Demo-Seite speichert keine personenbezogenen Daten serverseitig.
-        Eingaben im Formular werden nicht versendet.
-      </p>
-    </section>
 
     <script src="script.js"></script>
   </body>

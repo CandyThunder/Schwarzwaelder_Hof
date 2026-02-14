@@ -4,7 +4,7 @@ const dishes = [
     price: "14,90 €",
     info: "Cremige Waldpilze in Rahmsoße mit hausgemachten Knödeln.",
     image:
-      "https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1528607929212-2636ec44253e?auto=format&fit=crop&w=1200&q=80",
     allergy: ["L", "G"],
   },
   {
@@ -12,7 +12,7 @@ const dishes = [
     price: "18,50 €",
     info: "Frische Forelle mit Kräuterbutter, Kartoffeln und Salat.",
     image:
-      "https://images.unsplash.com/photo-1535399831218-d5bd36d1a6b3?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1559054663-e8d23213f55c?auto=format&fit=crop&w=1200&q=80",
     allergy: ["L"],
   },
   {
@@ -20,7 +20,7 @@ const dishes = [
     price: "21,00 €",
     info: "Langsam geschmort, serviert mit Rotkohl und Spätzle.",
     image:
-      "https://images.unsplash.com/photo-1600891964092-4316c288032e?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1529692236671-f1de65b2a7c0?auto=format&fit=crop&w=1200&q=80",
     allergy: ["G", "S"],
   },
   {
@@ -28,7 +28,7 @@ const dishes = [
     price: "13,50 €",
     info: "Schwäbischer Klassiker mit Bergkäse und kleinem Blattsalat.",
     image:
-      "https://images.unsplash.com/photo-1625943553852-781c6dd46faa?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80",
     allergy: ["G", "L"],
   },
   {
@@ -36,7 +36,7 @@ const dishes = [
     price: "15,20 €",
     info: "Cremiges Risotto mit Kräutern, Zitrone und gerösteten Kernen.",
     image:
-      "https://images.unsplash.com/photo-1476124369491-e7addf5db371?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?auto=format&fit=crop&w=1200&q=80",
     allergy: ["N"],
   },
   {
@@ -44,7 +44,7 @@ const dishes = [
     price: "7,20 €",
     info: "Neu interpretiert mit dunkler Schokolade und Kirschen.",
     image:
-      "https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=1200&q=80",
     allergy: ["G", "L", "N"],
   },
 ];

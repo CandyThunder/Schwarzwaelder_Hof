@@ -1,14 +1,14 @@
-# Schwarzwälder Hof – Moderne Demo-Website
+# Schwarzwälder Hof – Demo-Website
 
-Responsiver Onepager für ein Restaurant im Schwarzwald, ohne Build-Tooling, direkt in XAMPP lauffähig.
+Responsiver Restaurant-Onepager im warmen, traditionellen Stil. Läuft ohne Build-Tools direkt in XAMPP.
 
 ## Highlights
-- Design mit vorgegebener Farbpalette (Primary/Secondary/Accent)
-- Eigenes SVG-Logo (`assets/logo.svg`) in besserer Qualität
-- Interaktive Speisekarte mit Allergie-Filtern + Dish-Bildern
-- Öffnungszeiten inkl. dynamischem Status „Heute geöffnet?”
-- Kontaktbereich mit eingebetteter Karte + Reservierungsformular
-- Footer mit Impressum und Datenschutz
+- dunklere, augenfreundliche Farbwelt mit rustikalem Schwarzwald-Charakter
+- minimalistischer Header mit reinem Icon-Logo
+- Speisekarte mit Bildkarten + Allergie-Filtern
+- kompakter Öffnungszeiten-Status ohne unnötige Leerflächen
+- Kontaktbereich mit Adresse direkt über der Karte für klare Reihenfolge
+- rechtliche Seiten als separate Dokumente (`impressum.html`, `datenschutz.html`)
 
 ## Lokal testen mit XAMPP
 1. Projektordner nach `xampp/htdocs/Schwarzwaelder_Hof` kopieren.
@@ -16,7 +16,9 @@ Responsiver Onepager für ein Restaurant im Schwarzwald, ohne Build-Tooling, dir
 3. Im Browser öffnen: `http://localhost/Schwarzwaelder_Hof/`
 
 ## Dateien
-- `index.html` – Struktur und Inhalte
-- `styles.css` – Responsive Layout, Farben, Animationen
-- `script.js` – Filter, Menü-Rendering, Statuslogik, Mobile-Navigation
-- `assets/logo.svg` – vektorisiertes Logo
+- `index.html` – Startseite
+- `styles.css` – Design und Responsive Layout
+- `script.js` – Menü-Logik, Filter, Status und Mobile-Menü
+- `impressum.html` – rechtliche Seite
+- `datenschutz.html` – rechtliche Seite
+- `assets/logo.svg` – Logo-Icon
