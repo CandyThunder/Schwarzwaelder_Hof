@@ -17,6 +17,8 @@
 html,
 body {
   margin: 0;
+  width: 100%;
+  overflow-x: hidden;
   font-family: "Manrope", system-ui, sans-serif;
   background: linear-gradient(180deg, #0f1412 0%, #121a15 50%, #0e130f 100%);
   color: var(--text);
@@ -135,6 +137,7 @@ h2 {
 
 .section-head p {
   color: var(--muted);
+  line-height: 1.6;
 }
 
 .features,
@@ -271,6 +274,15 @@ h2 {
   display: flex;
   justify-content: space-between;
   gap: 1rem;
+  align-items: baseline;
+}
+
+.menu-item-header h3 {
+  margin: 0;
+}
+
+.menu-item p {
+  margin: 0;
 }
 
 .badges {
@@ -301,6 +313,10 @@ h2 {
 .hours-table td {
   padding: 0.45rem 0;
   border-bottom: 1px dashed rgba(255, 255, 255, 0.08);
+}
+
+.hours-table td:last-child {
+  text-align: right;
 }
 
 .highlight {
@@ -348,6 +364,7 @@ label {
 
 input,
 textarea {
+  width: 100%;
   background: rgba(255, 255, 255, 0.06);
   border: 1px solid var(--border);
   color: var(--text);
@@ -387,6 +404,9 @@ textarea {
     align-items: flex-start;
     gap: 0.75rem;
     flex-wrap: wrap;
+    top: 0.5rem;
+    margin: 0.5rem auto;
+    padding: 0.7rem 1rem;
   }
 
   .menu-toggle {
@@ -401,7 +421,83 @@ textarea {
     padding-top: 0.5rem;
   }
 
+  .site-nav a {
+    width: 100%;
+    padding: 0.55rem 0.35rem;
+  }
+
+  .site-nav a.contact-cta {
+    margin-top: 0.25rem;
+  }
+
+  .hero {
+    min-height: 68vh;
+  }
+
+  .hero-content {
+    padding: 3rem 1.4rem;
+  }
+
+  .menu-item-header {
+    flex-direction: column;
+    gap: 0.35rem;
+  }
+
+  .hours-table td {
+    padding: 0.5rem 0;
+  }
+
   .site-nav.open {
     display: flex;
+  }
+}
+
+@media (max-width: 640px) {
+  .logo {
+    height: 52px;
+  }
+
+  .section {
+    margin: 3.1rem auto;
+  }
+
+  .card {
+    padding: 1rem;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .hero-cta {
+    width: 100%;
+  }
+
+  .contact-details iframe {
+    height: 190px;
+  }
+}
+
+@media (max-width: 430px) {
+  .topbar {
+    width: calc(100% - 1rem);
+    border-radius: 16px;
+  }
+
+  .hero,
+  .section {
+    width: calc(100% - 1rem);
+  }
+
+  .hero {
+    border-radius: 18px;
+  }
+
+  .hero-content {
+    padding: 2.35rem 1rem;
+  }
+
+  .menu-toggle {
+    padding: 0.3rem 0.5rem;
   }
 }

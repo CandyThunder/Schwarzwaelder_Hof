@@ -156,9 +156,24 @@ function setupMobileNav() {
   const button = document.querySelector("#menuToggle");
   const nav = document.querySelector("#siteNav");
 
-  button.addEventListener("click", () => nav.classList.toggle("open"));
+  const setOpenState = (isOpen) => {
+    nav.classList.toggle("open", isOpen);
+    button.setAttribute("aria-expanded", String(isOpen));
+  };
+
+  button.addEventListener("click", () => {
+    const isOpen = !nav.classList.contains("open");
+    setOpenState(isOpen);
+  });
+
   nav.querySelectorAll("a").forEach((link) => {
-    link.addEventListener("click", () => nav.classList.remove("open"));
+    link.addEventListener("click", () => setOpenState(false));
+  });
+
+  window.addEventListener("resize", () => {
+    if (window.innerWidth > 900) {
+      setOpenState(false);
+    }
   });
 }
 
